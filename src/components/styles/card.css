@@ -1,0 +1,37 @@
+.weather-card {
+  background: rgba(0, 0, 0, 0.6); /* Dark glass */
+  backdrop-filter: blur(16px);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  text-align: center;
+  animation: fadeIn 1s ease;
+  color: #fff;
+}
+
+.weather-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #f8f9fa;
+}
+
+.weather-card .temp {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #ffdd57;
+  text-shadow: 0 0 12px rgba(255, 221, 87, 0.8);
+  margin-bottom: 1rem;
+}
+
+.weather-card p {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.weather-card p span {
+  font-weight: 600;
+  color: #fff;
+}

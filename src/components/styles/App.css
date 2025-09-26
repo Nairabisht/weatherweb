@@ -1,0 +1,148 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* ===== App Container ===== */
+.app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+.app h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #ffcc33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Search Section ===== */
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.search button {
+  width: 100%;
+  padding: 0.9rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.search button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 179, 71, 0.4);
+}
+
+/* ===== Weather Info ===== */
+.weather {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===== Responsive Design ===== */
+@media (min-width: 600px) {
+  .search-wrapper {
+    flex-direction: row;
+  }
+
+  .search input {
+    flex: 1;
+  }
+
+  .search button {
+    width: auto;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    max-width: 800px;
+    padding: 3rem;
+  }
+
+  .app h1 {
+    font-size: 2.5rem;
+  }
+
+  .app p {
+    font-size: 1.2rem;
+  }
+
+  .search input,
+  .search button {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .weather h2 {
+    font-size: 1.8rem;
+  }
+
+  .weather p {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
